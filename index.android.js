@@ -36,10 +36,10 @@ export default class arctic_this_week extends Component {
         />
         <List style={{marginLeft: -15}}>
           <ListItem style={{paddingRight: 5}}>
-              <Thumbnail square size={0} />
-              <Text style={{fontFamily: 'knile-semibolditalic'}}>Improving Internet Speeds for 20,000 Greenlanders</Text>
-              <Text style={{fontFamily: 'knile-semibolditalic', fontSize: 9, marginTop: -10, color: 'grey'}}>5.30 pm ET | The Arctic Institute</Text>
-              <Text style={{fontFamily: 'calendas_plus'}} note>Extension of an undersea cable and an upgrade to modern microwave frameworks</Text>
+            <Thumbnail square size={0} />
+            <Text style={{fontFamily: 'knile-semibolditalic'}}>Improving Internet Speeds for 20,000 Greenlanders</Text>
+            <Text style={{fontFamily: 'knile-semibolditalic', fontSize: 9, marginTop: -10, color: 'grey'}}>5.30 pm ET | The Arctic Institute</Text>
+            <Text style={{fontFamily: 'calendas_plus'}} note>Extension of an undersea cable and an upgrade to modern microwave frameworks</Text>
           </ListItem>
           <ListItem style={{paddingRight: 5}}>
               <Thumbnail square size={0} />
