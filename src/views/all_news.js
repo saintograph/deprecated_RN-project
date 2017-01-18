@@ -3,6 +3,17 @@ import { Dimensions, StyleSheet } from 'react-native';
 import { Container, Header, Title, Button, Icon, Content, List, ListItem, Text, Thumbnail, Image } from 'native-base';
 
 const styles = StyleSheet.create({
+  header: {
+    backgroundColor: 'white',
+  },
+  headerItems: {
+    color: 'black',
+  },
+  headerTitle: {
+    fontFamily: 'calendas_plus_bold',
+    color: 'black',
+    paddingLeft: 50,
+  },
   list: {
     marginLeft: -15,
   },
@@ -18,22 +29,25 @@ const styles = StyleSheet.create({
     marginTop: -10,
     color: 'grey',
   },
+  excerpt: {
+    fontFamily: 'calendas_plus',
+  },
 });
 
-const { list, listItem, textHeader, textDetails } = styles;
+const { header, headerItems, headerTitle, list, listItem, textHeader, textDetails, excerpt } = styles;
 
 class AllNews extends Component {
   render() {
     return (
       <Container>
         <Content>
-          <Header style={{backgroundColor: 'white'}}>
+          <Header style={header}>
             <Button transparent>
-              <Icon name='md-menu' style={{color: 'black'}}/>
+              <Icon name="md-menu" style={headerItems} />
             </Button>
-            <Title style={{fontFamily: 'calendas_plus_bold', color: 'black', paddingLeft: 50}}>The Arctic This Week</Title>
+            <Title style={headerTitle}>The Arctic This Week</Title>
             <Button transparent>
-              <Icon name='md-more' style={{color: 'black'}}/>
+              <Icon name="md-more" style={headerItems} />
             </Button>
           </Header>
           <Image
@@ -45,7 +59,7 @@ class AllNews extends Component {
               <Thumbnail square size={0} />
               <Text style={textHeader}>Improving Internet Speeds for 20,000 Greenlanders</Text>
               <Text style={textDetails}>5.30 pm ET | The Arctic Institute</Text>
-              <Text style={{fontFamily: 'calendas_plus'}} note>Extension of an undersea cable and an upgrade to modern microwave frameworks</Text>
+              <Text style={excerpt} note>Extension of an undersea cable and an upgrade to modern microwave frameworks</Text>
             </ListItem>
           </List>
         </Content>
@@ -54,4 +68,4 @@ class AllNews extends Component {
   }
 }
 
-export default AllNews;
+// export default AllNews;

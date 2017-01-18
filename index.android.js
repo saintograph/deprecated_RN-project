@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 import MainApp from './src/MainApp';
 
-export default class arcticThisWeek extends Component {
+export default class arctic_this_week extends Component {
   render() {
     return (
       <MainApp />
@@ -11,4 +11,4 @@ export default class arcticThisWeek extends Component {
 }
 
 
-AppRegistry.registerComponent('arcticThisWeek', () => arcticThisWeek);
+AppRegistry.registerComponent('arctic_this_week', () => arctic_this_week);
